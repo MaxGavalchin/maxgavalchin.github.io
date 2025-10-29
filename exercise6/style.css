@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: sans-serif;
+
+	/*	define a CSS variable */
+	--accent-color: rgb(0,0,255);
+} 
+
+.container{
+ 	width: 500px;
+	margin: auto;
+}
+
+.item{
+	border-top: 2px solid var(--accent-color);
+	padding: 2rem 0;
+}
+
+h1{
+	text-align: center;
+	margin: 1rem auto;
+}
+
+h3{
+	margin: .5rem 0 .5rem 30px;
+}
+
+a{
+	color: blue;
+}
+a:hover{
+	color: red;
+}
+
+.item { 
+	cursor: pointer;
+}
+
+.heading h2::before{
+	content: '+';
+	display: inline-block;
+	width: 30px;
+}
+
+.details{
+	line-height: 1.3;
+	color: var(--accent-color);
+	display: none;
+/*	height: 0;
+	overflow: hidden;
+	transition: height 400ms ease-in-out;*/
+}
+
+.active .heading h2::before{
+	content: '-';
+}
+.active .details{
+	display: block;
+/*	height: 300px;*/
+}
+
+
+
+button{
+	font-size: 1rem;
+	font-weight: bold;
+	border: 9px solid var(--accent-color);
+	background: transparent;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	border-radius: 10px;
+}
+
+button:hover{
+	background: rgb(200 200 200);
+	cursor: pointer;
+}
+
+
+/*	DARK MODE STYLES GO HERE */
+
+body.darkmode {
+	background: #19015b;
+	color: white;
+    
+    div {
+        width: 100px;
+        height: 100px;
+        background: rgb(0, 0, 0);
+        position: relative;
+        animation-name: mymove;
+        animation-duration: 5s;
+      }
+      
+      @keyframes mymove {
+        from {left: 0px;}
+        to {left: 200px;}
+      }
+
+	/*	redefine a CSS variable */
+	--accent-color: rgb(242, 255, 176);
+}
+
+body.darkmode button{
+	color: white;
+    
+}
+
+.myDIV {
+	font-family: 'Courier New', Courier, monospace;
+}

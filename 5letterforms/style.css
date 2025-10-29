@@ -1,0 +1,79 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+  }
+  .container > div {
+    background-color: #f1f1f1;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;}
+
+
+
+
+
+
+
+.letter-m {
+    position: absolute;
+    width: 100px; /* Adjust overall width as needed */
+    height: 100px; /* Adjust overall height as needed */
+    margin: px auto; /* Center the M on the page */
+}
+
+.column {
+    position: absolute;
+    width: 10px; /* Width of the vertical columns */
+    height: 100%;
+    background-color: blue; /* Color of the M */
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.diagonal-1, .diagonal-2 {
+    position: absolute;
+    width: 30px; /* Width of the diagonal strokes */
+    height: calc(100% / 2 * 1.414); /* Approximate length for 45-degree diagonal */
+    background-color: blue; /* Color of the M */
+    transform-origin: top left; /* Pivot point for rotation */
+}
+
+.diagonal-1 {
+    left: 15%; /* Adjust position to meet the left column */
+    top: 0;
+    transform: rotate(340deg); /* Rotate for the first diagonal */
+}
+
+.diagonal-2 {
+    right: 15%; /* Adjust position to meet the right column */
+    top: 0;
+    transform: rotate(-340deg); /* Rotate for the second diagonal */
+}
+
+.m {
+    position: absolute;
+    top: 150px
+ 
+}
+
+
+
+
+.dot-container {
+    position: absolute;
+    right: 30px;
+}
+
+.m5 {
+    background-color: blue;
+    
+}

@@ -1,0 +1,101 @@
+.m {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    bottom: 50px;
+    left: 20px;
+    
+    
+
+}
+    
+
+
+.m2 {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    bottom: 50px;
+    left: 90px;
+}
+
+.m3 {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    bottom: 50px;
+    left: 100px;
+    
+
+}
+
+.m4 {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    bottom: 50px;
+    left: 87px;
+
+
+}
+
+.m {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 7px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+  }
+  
+  .m:hover {
+    background-color: #3e8e41;
+    color: rgb(255, 255, 255); 
+  }
+
+  .m3:hover {
+    animation: spin 2s linear infinite; /* Applies the 'spin' animation */
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg); /* Starting state of the rotation */
+    }
+    to {
+      transform: rotate(360deg); /* Ending state of the rotation (one full turn) */
+    }
+  }
+
+
+
+
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+  
+
+
+
+
+
+
+    

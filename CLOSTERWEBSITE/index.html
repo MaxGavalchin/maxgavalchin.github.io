@@ -2,135 +2,13 @@
 <html>
 <head>
 <style>
-
-  #myDIV {
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0);
-  margin-top: 20px;
-}
-body 
-
-
-{
-  background-image: url("img/closter-nj-2.jpg");
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  margin-top: 60px;
-  margin-left: 10px;
-}
-
-h2, p {
-  margin: 10px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #87a3ff;
-  opacity: 100%;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-ul li {
-  float: left;
-}
-
-ul li a {
-  display: block;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul li a:hover:not(.active) {
-  background-color: #ffffff;
-}
-
-ul li a.active {
-  background-color: #ffffff;
-}
 </style>
 </head>
 <body>
 
-<ul>
-  <li><a class="active" href="#home">CLOSTER</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
 
-<h1>CLOSTER</h1>
-<h2>hello</h2>
+<h1><a href="index.html">CLOSTER</a></h1>
 
-
-
-<a href="index1.html">
-  <img src="img/Bluemercury.png" alt="HTML tutorial" style="width:115px;height: 150px;">
-</a>
-
-<a href="index2.html">
-  <img src="img/Gateaux.png" alt="HTML tutorial" style="width:115px;height: 150px;">
-</a>
-
-<a href="index3.html">
-  <img src="img/Memere.png" alt="HTML tutorial" style="width:115px;height: 150px;">
-</a>
-
-<a href="index4.html">
-  <img src="img/Myunga Tofu.png" alt="HTML tutorial" style="width:115px;height: 150px;">
-</a>
-
-<a href="index5.html">
-  <img src="img/Nature Center [Recovered]-04.png" alt="HTML tutorial" style="width:115px;height: 150px;">
-</a>
-
-<a href="index6.html">
-  <img src="img/NVD HS.png" alt="HTML tutorial" style="width:115px;height: 150px;">
-</a>
-
-<a href="index7.html">
-  <img src="img/Schauble.png" alt="HTML tutorial" style="width:115px;height: 150px;">
-</a>
-
-<a href="index8.html">
-  <img src="img/So Good.png" alt="HTML tutorial" style="width:115px;height: 150px;">
-</a>
-
-<a href="index9.html">
-  <img src="img/Tenakill.png" alt="HTML tutorial" style="width:115px;height: 150px;">
-</a>
-
-<a href="index10.html">
-  <img src="img/Wards.png" alt="HTML tutorial" style="width:115px;height: 150px;">
-</a>
-
-<a href="default.asp">
-  <img src="img/Whole foods.png" alt="HTML tutorial" style="width:115px;height: 150px;">
-</a>
-
-<a href="default.asp">
-  <img src="img/Whole foods.png" alt="HTML tutorial" style="width:115px;height: 150px;">
-</a>
-
-<a href="default.asp">
-  <img src="img/Whole foods.png" alt="HTML tutorial" style="width:115px;height: 150px;">
-</a>
-
-
-
-
-
-<p>Closter NJ!!!!!.</p>
 
 
 
@@ -140,34 +18,298 @@ ul li a.active {
 
 
 
+<!DOCTYPE html>
+<html>
+<style>
 
 
-<p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p>
+h1 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
 
-<button onclick="myFunction()">Reveal Blue!</button>
+h2 {
+      color: rgb(24, 0, 118);
+      font-size: 24px;
+      font-family: 'Courier New', Courier, monospace;
+      border: 2px solid #333; /* Define your border style */
+  padding: 10px 15px; /* Add padding for spacing between text and border */
+  border-radius: 10px;
+  width: 100px; /* Example width */
+  height: 30px; /* Must be equal to width for a circle */
+  display: flex; /* Enables flexbox for centering */
+  align-items: center; /* Vertically centers text */
+  justify-content: center; /* Horizontally centers text */
+  text-align: center; /* Fallback for older browsers */
+  
+  
+    }
 
-<div id="myDIV">
-Blue images will go here.
-  <img src="img/Gateaux.png" alt="HTML tutorial" style="width:115px;height: 150px;">
-  <img src="" alt="Blue Images" style="width:115px;height: 150px;">
-</a>
+h3 {
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  padding: 15px 16px;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: calc(30px);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  padding: 15px 16px;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: calc(30px);
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute; top: 300px; left: 400px;
+  
+}
+
+.filterDiv {
+  float: left;
+  background-color: transparent;
+  color: #4042c4;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+  position: absolute 100px;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace
+  
+}
+
+/* Style the buttons */
+.btn {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+  border: none;
+  outline: none;
+  padding: 15px 16px;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: calc(30px);
+  font-family: 'Courier New', Courier, monospace
+}
+
+.btn:hover {
+  background-color: rgb(166, 166, 166);
+}
+
+.btn.active {
+  background-color: #ffffff;
+  color: rgb(0, 170, 255);
+  stroke-width: 20;
+
+
+
+
+}
+</style>
+<body>
+
+
+
+
+<h2><a href="index12.html">About</a>
+
+
+
+
+
+<h3>FILTER</h3>
+
+
+
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button> 
+  <button class="btn" onclick="filterSelection('Food/Beverage')"> Food/Beverage</button>
+  <button class="btn" onclick="filterSelection('Retail')"> Retail</button>
+  <button class="btn" onclick="filterSelection('Education')"> Education</button>
+  <button class="btn" onclick="filterSelection('Nature')"> Nature</button>
 </div>
 
-<p><b>Note:</b> The element will not take up any space when the display property 
-is set to "none".</p>
+
+<div class="container">
+  
+  <div class="filterDiv Food/Beverage"><img src="img/Gateaux.png" alt="Italian Trulli" width="400px" height="510px" position: absolute;
+top: 200px; left: 500px; style="position: absolute; top: 600px; left: 100px;"></div> 
+
+<div class="filterDiv Food/Beverage">
+  <a href="index3.html" target="_blank">
+    <img src="img/Memere.png" 
+         alt="Italian Trulli" 
+         width="400px" 
+         height="510px" 
+         style="position: absolute; top: 300px; left: 400px;">
+  </a>
+</div>
+<div class="filterDiv Food/Beverage">
+  <a href="index8.html" target="_blank">
+    <img src="img/So Good.png" 
+         alt="Italian Trulli" 
+         width="400px" 
+         height="510px" 
+         style="position: absolute; top: 0px; left: 1500px;">
+  </a>
+</div>
+<div class="filterDiv Food/Beverage">
+  <a href="index6.html" target="_blank">
+    <img src="img/Whole foods.png" 
+         alt="Italian Trulli" 
+         width="400px" 
+         height="510px" 
+         style="position: absolute; top: 700px; left: 1300px;">
+  </a>
+</div>
+  
+ 
+  
+    <div class="filterDiv Food/Beverage" style="position: relative; height: 600px;">
+      <a href="index4.html" target="_blank">
+        <img src="img/Myunga Tofu.png" 
+             alt="Italian Trulli" 
+             width="400" 
+             height="510" 
+             style="position: absolute; top: 0px; left: 400px;">
+      </a>
+    </div>
+
+  <div class="filterDiv Retail">
+    <a href="index10.html" target="_blank">
+      <img src="img/Wards.png" 
+           alt="Italian Trulli" 
+           width="400px" 
+           height="510px" 
+           style="position: absolute; top: -40px; left: 300px;">
+    </a>
+  </div>
+
+  <div class="filterDiv Retail">
+    <a href="index1.html" target="index1.html">
+      <img src="img/Bluemercury.png" 
+           alt="Italian Trulli" 
+           width="400px" 
+           height="510px" 
+           style="position: absolute; top: 350px; left: 1170px;">
+    </a>
+  </div>
+  
+  <div class="filterDiv Education">
+    <a href="index9.html" target="_blank">
+      <img src="img/Tenakill.png" 
+           alt="Italian Trulli" 
+           width="400px" 
+           height="510px" 
+           style="position: absolute; top: 600px; left: 400px;">
+    </a>
+  </div>
+
+  <div class="filterDiv Education">
+    <a href="index5.html" target="_blank">
+      <img src="img/NVD HS.png" 
+           alt="Italian Trulli" 
+           width="400px" 
+           height="510px" 
+           style="position: absolute; top: 0px; left: 1100px;">
+    </a>
+  </div>
+
+
+
+  <div class="filterDiv Nature">
+    <a href="index7.html" target="_blank">
+      <img src="img/Schauble.png" 
+           alt="Italian Trulli" 
+           width="400px" 
+           height="510px" 
+           style="position: absolute; top: 300px; left: 1500px;">
+    </a>
+  </div>
+  <div class="filterDiv Nature">
+    <a href="index11.html" target="_blank">
+      <img src="img/Nature Center [Recovered]-04.png" 
+           alt="Italian Trulli" 
+           width="400px" 
+           height="510px" 
+           style="position: absolute; top: 200px; left: 700px;">
+    </a>
+  </div>
+
+  
+
+ 
+</div>
 
 <script>
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
 </script>
 
-
-
 </body>
 </html>
+
+  
+
+
+

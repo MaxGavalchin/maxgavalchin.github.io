@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Random Cubes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <script src="./script.js"></script>
+    <style>
+      body {
+        width:100vw;
+        height:100vh;
+        background-color: rgba(63, 0, 130, 0.624);
+        
+      }
+
+      .rectangle {
+  position: absolute;
+  width: 200px;      
+  height: 200px;
+  background-color: transparent;
+
+  /* make it into dots */
+  background-image: radial-gradient(rgb(109, 255, 187) 20%, transparent 20%);
+  background-size: 10px 10px; 
+  background-image: radial-gradient(circle, rgb(240, 50, 44) 20%, transparent 20%);
+        background-size: 10px 10px;
+        transition: all 0.2s;
+        animation: changeDots 1s infinite alternate;
+  
+  transition: all 1s;  
+      }
+
+
+       /* Color change!!!! */
+
+       @keyframes changeDots {
+        0% {
+          background-image: radial-gradient(circle, rgb(0, 255, 136) 20%, transparent 20%);
+        }
+        25% {
+          background-image: radial-gradient(circle, rgb(255, 0, 0) 20%, transparent 20%);
+        }
+        50% {
+          background-image: radial-gradient(circle, rgb(255, 255, 0) 20%, transparent 20%);
+        }
+        75% {
+          background-image: radial-gradient(circle, rgb(51, 255, 0) 20%, transparent 20%);
+        }
+        100% {
+          background-image: radial-gradient(circle, rgb(255, 0, 255) 20%, transparent 20%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rectangle"></div>
+  </body>
+</html>
+    
+    </style>
+
+ 
+          
+
+
+    
+    
+
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.tree-img {
+    position: absolute;
+    top: 10px;    
+    left: 100px;  
+    width: 500px;
+    height: 600px;
+  }
+
+
+  .noodles-img {
+    position: absolute;
+    top: 50px;      /* change this */
+    left: 50px;     /* change this */
+    width: 500px;
+    height: 600px;
+  }

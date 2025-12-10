@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ride!</title>
+    <!-- css link!!! -->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    
+    <p style="
+    color: rgb(10, 10, 10);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+">
+  Come join on this productive train ride!
+</p>
+
+<!-- this is the nightime sky at low opacity  -->
+
+    <img id="blue"
+    src="img/blue.png"
+    style="
+       display:none;
+       position:absolute;
+       top: 330px;       /* adjust vertical position */
+       left:200px;      /* adjust horizontal position */
+       width:6000px;    /* scale the image */
+       transform:scale(1.2); /* optional additional scaling */
+       margin: 0;
+       padding: 0;
+       opacity: 0.6;
+    " />
+
+<script>
+   function updateImageVisibility() {
+       const now = new Date();
+       const hour = now.getHours();
+
+       // Show only between these hours
+       if (hour >= 8 && hour < 24) {
+           document.getElementById("blue").style.display = "block";
+       } else {
+           document.getElementById("blue").style.display = "none";
+       }
+   }
+
+   updateImageVisibility();
+   setInterval(updateImageVisibility, 60 * 1000); // check every minute
+</script>
+ 
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 16 && hour < 24) {
+            document.getElementById("blue").style.display = "block";
+        } else {
+            document.getElementById("blue").style.display = "none";
+        }
+    }
+ 
+
+    
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+<img id="whitebackground"
+    src="img/white background.avif"
+    style="
+       display:none;
+       position:absolute;
+       top: 830px;       /* adjust vertical position */
+       left:500px;      /* adjust horizontal position */
+       width:5000px;    /* scale the image */
+       transform:scale(1.2); /* optional additional scaling */
+    " />
+
+<script>
+   function updateImageVisibility() {
+       const now = new Date();
+       const hour = now.getHours();
+
+       // Show only between these hours
+       if (hour >= 8 && hour < 24 ) {
+           document.getElementById("whitebackground").style.display = "block";
+       } else {
+           document.getElementById("whitebackground").style.display = "none";
+       }
+   }
+
+   updateImageVisibility();
+   setInterval(updateImageVisibility, 60 * 1000); // check every minute
+</script>
+
+
+
+
+
+
+
+     
+<img id="8am"
+src="img/8am.png"
+style="
+   display:none;
+   position:absolute;
+   top:120px;       /* adjust vertical position */
+   left:120px;      /* adjust horizontal position */
+   width:400px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+
+<img id="9am"
+src="img/9am.png"
+style="
+   display:none;
+   position:absolute;
+   top:120px;       /* adjust vertical position */
+   left:120px;      /* adjust horizontal position */
+   width:400px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 9 && hour < 10 ) {
+            document.getElementById("9am").style.display = "block";
+        } else {
+            document.getElementById("9am").style.display = "none";
+        }
+    }
+
+
+
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+
+<img id="10am"
+src="img/10am.png"
+style="
+   display:none;
+   position:absolute;
+   top:120px;       /* adjust vertical position */
+   left:120px;      /* adjust horizontal position */
+   width:400px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 10 && hour < 11 ) {
+            document.getElementById("10am").style.display = "block";
+        } else {
+            document.getElementById("10am").style.display = "none";
+        }
+    }
+
+
+
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+
+
+<img id="11am"
+src="img/11am.png"
+style="
+   display:none;
+   position:absolute;
+   top:120px;       /* adjust vertical position */
+   left:120px;      /* adjust horizontal position */
+   width:400px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 11 && hour < 12 ) {
+            document.getElementById("11am").style.display = "block";
+        } else {
+            document.getElementById("11am").style.display = "none";
+        }
+    }
+
+
+ 
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+<img id="12am"
+src="img/12am.png"
+style="
+   display:none;
+   position:absolute;
+   top:120px;       /* adjust vertical position */
+   left:120px;      /* adjust horizontal position */
+   width:400px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 12 && hour < 13 ) {
+            document.getElementById("12am").style.display = "block";
+        } else {
+            document.getElementById("12am").style.display = "none";
+        }
+    }
+
+    
+
+ 
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+<img id="1pm"
+src="img/1pm.png"
+style="
+   display:none;
+   position:absolute;
+   top:120px;       /* adjust vertical position */
+   left:120px;      /* adjust horizontal position */
+   width:400px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 13 && hour < 14 ) {
+            document.getElementById("1pm").style.display = "block";
+        } else {
+            document.getElementById("1pm").style.display = "none";
+        }
+    }
+
+
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+
+<img id="2pm"
+src="img/2pm.png"
+style="
+   display:none;
+   position:absolute;
+   top:120px;       /* adjust vertical position */
+   left:120px;      /* adjust horizontal position */
+   width:400px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 14 && hour < 15 ) {
+            document.getElementById("2pm").style.display = "block";
+        } else {
+            document.getElementById("2pm").style.display = "none";
+        }
+    }
+
+
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+
+<img id="3pm"
+src="img/3pm.png"
+style="
+   display:none;
+   position:absolute;
+   top:120px;       /* adjust vertical position */
+   left:120px;      /* adjust horizontal position */
+   width:400px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 15 && hour < 16 ) {
+            document.getElementById("3pm").style.display = "block";
+        } else {
+            document.getElementById("3pm").style.display = "none";
+        }
+    }
+
+    
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+<img id="4pm"
+src="img/4pm.png"
+style="
+   display:none;
+   position:absolute;
+   top:120px;       /* adjust vertical position */
+   left:120px;      /* adjust horizontal position */
+   width:400px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 16 && hour < 17 ) {
+            document.getElementById("4pm").style.display = "block";
+        } else {
+            document.getElementById("4pm").style.display = "none";
+        }
+    }
+
+    
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+<img id="morningcoffee"
+src="img/morningcoffee.png"
+style="
+   display:none;
+   position:absolute;
+   top:-200px;       /* adjust vertical position */
+   left:150px;      /* adjust horizontal position */
+   width:600px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 8 && hour < 10 ) {
+            document.getElementById("morningcoffee").style.display = "block";
+        } else {
+            document.getElementById("morningcoffee").style.display = "none";
+        }
+    }
+
+    
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+
+<img id="answeringemails"
+src="img/answering emails.png"
+style="
+   display:none;
+   position:absolute;
+   top:-200px;       /* adjust vertical position */
+   left:150px;      /* adjust horizontal position */
+   width:600px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 10 && hour < 12 ) {
+            document.getElementById("answeringemails").style.display = "block";
+        } else {
+            document.getElementById("answeringemails").style.display = "none";
+        }
+    }
+
+    
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+
+<img id="writingemails"
+src="img/writing emails.png"
+style="
+   display:none;
+   position:absolute;
+   top:-200px;       /* adjust vertical position */
+   left:150px;      /* adjust horizontal position */
+   width:600px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 12 && hour < 13 ) {
+            document.getElementById("writingemails").style.display = "block";
+        } else {
+            document.getElementById("writingemails").style.display = "none";
+        }
+
+        if (hour >= 17 && hour < 18 ) {
+            document.getElementById("writingemails").style.display = "block";
+        } else {
+            document.getElementById("writingemails").style.display = "none";
+        }
+    }
+
+    
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+
+<img id="lunchbreak"
+src="img/lunch break.png"
+style="
+   display:none;
+   position:absolute;
+   top:-200px;       /* adjust vertical position */
+   left:150px;      /* adjust horizontal position */
+   width:600px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 12 && hour < 14 ) {
+            document.getElementById("lunchbreak").style.display = "block";
+        } else {
+            document.getElementById("lunchbreak").style.display = "none";
+        }
+    }
+
+    
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+<img id="reading"
+src="img/2book.png"
+style="
+   display:none;
+   position:absolute;
+   top:110px;       /* adjust vertical position */
+   left:300px;      /* adjust horizontal position */
+   width:700px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 14 && hour < 16 ) {
+            document.getElementById("reading").style.display = "block";
+        } else {
+            document.getElementById("reading").style.display = "none";
+        }
+    }
+
+    
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+
+<img id="readingtime"
+src="img/readingtext.png"
+style="
+   display:none;
+   position:absolute;
+   top:-200px;       /* adjust vertical position */
+   left:150px;      /* adjust horizontal position */
+   width:600px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 14 && hour < 16 ) {
+            document.getElementById("readingtime").style.display = "block";
+        } else {
+            document.getElementById("readingtime").style.display = "none";
+        }
+    }
+
+    
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    <img id="coffeeImage"
+    src="img/2coffee.png"
+    style="
+       display:none;
+       position:absolute;
+       top:300px;       /* adjust vertical position */
+       left:400px;      /* adjust horizontal position */
+       width:400px;    /* scale the image */
+       transform:scale(1.2); /* optional additional scaling */
+    " />
+
+
+
+<img id="morningcoffee"
+src="img/morningcoffee.png"
+style="
+   display:none;
+   position:absolute;
+   top:-190px;       /* adjust vertical position */
+   left:900px;      /* adjust horizontal position */
+   width:500px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<img id="8am"
+src="img/8am.png"
+style="
+   display:none;
+   position:absolute;
+   top: 360px;       /* adjust vertical position */
+   left:600px;      /* adjust horizontal position */
+   width:700px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+   function updateImageVisibility() {
+       const now = new Date();
+       const hour = now.getHours();
+
+       // Show only between these hours
+       if (hour >= 8 && hour < 10) {
+           document.getElementById("coffeeImage").style.display = "block";
+       } else {
+           document.getElementById("coffeeImage").style.display = "none";
+       }
+   }
+
+   updateImageVisibility();
+   setInterval(updateImageVisibility, 60 * 1000); // check every minute
+</script>
+
+
+
+<img id="daycloud"
+    src="img/2dayclouds.png"
+    style="
+       display:none;
+       position:absolute;
+       top: 20px;       /* adjust vertical position */
+       left:700px;      /* adjust horizontal position */
+       width:900px;    /* scale the image */
+       transform:scale(1.2); /* optional additional scaling */
+    " />
+
+<script>
+   function updateImageVisibility() {
+       const now = new Date();
+       const hour = now.getHours();
+
+       // Show only between these hours
+       if (hour >= 8 && hour < 16) {
+           document.getElementById("daycloud").style.display = "block";
+       } else {
+           document.getElementById("daycloud").style.display = "none";
+       }
+   }
+
+   updateImageVisibility();
+   setInterval(updateImageVisibility, 60 * 1000); // check every minute
+</script>
+
+
+
+
+
+<img id="breakfast"
+    src="img/2breakfast.png"
+    style="
+       display:none;
+       position:absolute;
+       top: 500px;       /* adjust vertical position */
+       left:700px;      /* adjust horizontal position */
+       width:400px;    /* scale the image */
+       transform:scale(1.2); /* optional additional scaling */
+    " />
+
+<script>
+   function updateImageVisibility() {
+       const now = new Date();
+       const hour = now.getHours();
+
+       // Show only between these hours
+       if (hour >= 9 && hour < 10) {
+           document.getElementById("breakfast").style.display = "block";
+       } else {
+           document.getElementById("breakfast").style.display = "none";
+       }
+   }
+
+   updateImageVisibility();
+   setInterval(updateImageVisibility, 60 * 1000); // check every minute
+</script>
+
+
+
+
+<img id="phone"
+    src="img/2phone.png"
+    style="
+       display:none;
+       position:absolute;
+       top: 200px;       /* adjust vertical position */
+       left:1000px;      /* adjust horizontal position */
+       width:500px;    /* scale the image */
+       transform:scale(1.2); /* optional additional scaling */
+    " />
+
+<script>
+   function updateImageVisibility() {
+       const now = new Date();
+       const hour = now.getHours();
+
+       // Show only between these hours
+       if (hour >= 8 && hour < 24) {
+           document.getElementById("phone").style.display = "block";
+       } else {
+           document.getElementById("phone").style.display = "none";
+       }
+   }
+
+   updateImageVisibility();
+   setInterval(updateImageVisibility, 60 * 1000); // check every minute
+</script>
+
+<img id="birdday"
+    src="img/2birdday.png"
+    style="
+       display:none;
+       position:absolute;
+       top: 100px;       /* adjust vertical position */
+       left:1300px;      /* adjust horizontal position */
+       width:500px;    /* scale the image */
+       transform:scale(1.2); /* optional additional scaling */
+    " />
+
+<script>
+   function updateImageVisibility() {
+       const now = new Date();
+       const hour = now.getHours();
+
+       // Show only between these hours
+       if (hour >= 8 && hour < 16) {
+           document.getElementById("birdday").style.display = "block";
+       } else {
+           document.getElementById("birdday").style.display = "none";
+       }
+   }
+
+   updateImageVisibility();
+   setInterval(updateImageVisibility, 60 * 1000); // check every minute
+</script>
+
+<img id="birdnight"
+    src="img/2birdnight.png"
+    style="
+       display:none;
+       position:absolute;
+       top: 100px;       /* adjust vertical position */
+       left:1300px;      /* adjust horizontal position */
+       width:500px;    /* scale the image */
+       transform:scale(1.2); /* optional additional scaling */
+    " />
+
+<script>
+   function updateImageVisibility() {
+       const now = new Date();
+       const hour = now.getHours();
+
+       // Show only between these hours
+       if (hour >= 16 && hour < 24) {
+           document.getElementById("birdnight").style.display = "block";
+       } else {
+           document.getElementById("birdnight").style.display = "none";
+       }
+   }
+
+   updateImageVisibility();
+   setInterval(updateImageVisibility, 60 * 1000); // check every minute
+</script>
+
+
+
+<img id="cloudsnight"
+    src="img/2nightcloud.png"
+    style="
+       display:none;
+       position:absolute;
+       top: -200px;       /* adjust vertical position */
+       left:500px;      /* adjust horizontal position */
+       width:800px;    /* scale the image */
+       transform:scale(1.2); /* optional additional scaling */
+    " />
+
+<script>
+   function updateImageVisibility() {
+       const now = new Date();
+       const hour = now.getHours();
+
+       // Show only between these hours
+       if (hour >= 16 && hour < 24 ) {
+           document.getElementById("cloudsnight").style.display = "block";
+       } else {
+           document.getElementById("cloudsnight").style.display = "none";
+       }
+   }
+
+   updateImageVisibility();
+   setInterval(updateImageVisibility, 60 * 1000); // check every minute
+</script>
+
+
+
+<img id="closedcomputer"
+    src="img/2offlaptop.png"
+    style="
+       display:none;
+       position:absolute;
+       top: 120px;       /* adjust vertical position */
+       left:800px;      /* adjust horizontal position */
+       width:600px;    /* scale the image */
+       transform:scale(1.2); /* optional additional scaling */
+    " />
+
+
+
+
+
+<img id="oncomputer"
+    src="img/2onlaptop.png"
+    style="
+       display:none;
+       position:absolute;
+       top: 100px;       /* adjust vertical position */
+       left:400px;      /* adjust horizontal position */
+       width:500px;    /* scale the image */
+       transform:scale(1.2); /* optional additional scaling */
+    " />
+
+
+
+<img id="glasses"
+    src="img/2glasses.png"
+    style="
+       display:none;
+       position:absolute;
+       top: 330px;       /* adjust vertical position */
+       left:200px;      /* adjust horizontal position */
+       width:500px;    /* scale the image */
+       transform:scale(1.2); /* optional additional scaling */
+    " />
+
+<img id="dinner"
+src="img/2dinner.png"
+style="
+   display:none;
+   position:absolute;
+   top: 300px;       /* adjust vertical position */
+   left:600px;      /* adjust horizontal position */
+   width:400px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 16 && hour < 24 ) {
+            document.getElementById("dinner").style.display = "block";
+        } else {
+            document.getElementById("dinner").style.display = "none";
+        }
+    }
+ 
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+
+<img id="rain"
+src="img/rain.png"
+style="
+   display:none;
+   position:absolute;
+   top: 50px;       /* adjust vertical position */
+   left:200px;      /* adjust horizontal position */
+   width:600px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<img id="birdday"
+src="img/2birdday.png"
+style="
+   display:none;
+   position:absolute;
+   top: -210px;       /* adjust vertical position */
+   left:1000px;      /* adjust horizontal position */
+   width:600px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<img id="birdnight"
+src="img/birdnight.png"
+style="
+   display:none;
+   position:absolute;
+   top: -210px;       /* adjust vertical position */
+   left:100px;      /* adjust horizontal position */
+   width:600px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<img id="drinknight"
+src="img/drinknight.png"
+style="
+   display:none;
+   position:absolute;
+   top: 100px;       /* adjust vertical position */
+   left:900px;      /* adjust horizontal position */
+   width:600px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<img id="spoon"
+src="img/spoon.png"
+style="
+   display:none;
+   position:absolute;
+   top: 500px;       /* adjust vertical position */
+   left:20px;      /* adjust horizontal position */
+   width:300px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<img id="lunch"
+src="img/2lunch.png"
+style="
+   display:none;
+   position:absolute;
+   top: 430px;       /* adjust vertical position */
+   left: 600px;      /* adjust horizontal position */
+   width:500px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 12 && hour < 15 ) {
+            document.getElementById("lunch").style.display = "block";
+        } else {
+            document.getElementById("lunch").style.display = "none";
+        }
+    }
+ 
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+<img id="lunch"
+src="img/2lunch.png"
+style="
+   display:none;
+   position:absolute;
+   top: 430px;       /* adjust vertical position */
+   left: 600px;      /* adjust horizontal position */
+   width:500px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 12 && hour < 15 ) {
+            document.getElementById("lunch").style.display = "block";
+        } else {
+            document.getElementById("lunch").style.display = "none";
+        }
+    }
+ 
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+<img id="lunch"
+src="img/2lunch.png"
+style="
+   display:none;
+   position:absolute;
+   top: 430px;       /* adjust vertical position */
+   left: 600px;      /* adjust horizontal position */
+   width:500px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 12 && hour < 24 ) {
+            document.getElementById("lunch").style.display = "block";
+        } else {
+            document.getElementById("lunch").style.display = "none";
+        }
+    }
+ 
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+
+
+
+
+
+
+
+
+<img id="morningcoffee"
+src="img/morningcoffee.png"
+style="
+   display:none;
+   position:absolute;
+   top: 760px;       /* adjust vertical position */
+   left:700px;      /* adjust horizontal position */
+   width:900px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+
+<script>
+     function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+
+        const body = document.querySelector("body");
+
+        body.classList.add("body-" + hour);
+
+        console.log(body);
+            
+
+
+              // Show only between these hours
+     if (hour >= 8 && hour < 24) {
+           document.getElementById("break").style.display = "block";
+       } else {
+           document.getElementById("break").style.display = "none";
+       }
+
+       
+
+
+
+       // Show only between these hours
+       if (hour >= 10 && hour < 12) {
+           document.getElementById("oncomputer").style.display = "block";
+       } else {
+           document.getElementById("oncomputer").style.display = "none";
+       }
+     
+
+      
+     
+          // Show only between these hours
+          if (hour >= 8 && hour < 9) {
+            document.getElementById("closedcomputer").style.display = "block";
+        } else {
+            document.getElementById("closedcomputer").style.display = "none";
+        }
+       if (hour >= 8 && hour < 9) {
+           document.getElementById("closedcomputer").style.display = "block";
+       } else {
+           document.getElementById("closedcomputer").style.display = "none";
+       }
+   }
+
+   updateImageVisibility();
+   setInterval(updateImageVisibility, 60 * 1000); // check every minute
+</script>
+
+
+<script>
+    function updateImageVisibility() {
+       const now = new Date();
+       const hour = now.getHours();
+
+       const body = document.querySelector("body");
+
+       body.classList.add("body-" + hour);
+
+       console.log(body);
+           // Show only between these hours
+
+              // Show only between these hours
+     if (hour >= 8 && hour < 9) {
+           document.getElementById("8am").style.display = "block";
+       } else {
+           document.getElementById("8am").style.display = "none";
+       }
+       
+       // Show only between these hours
+     if (hour >= 9 && hour < 10) {
+           document.getElementById("9am").style.display = "block";
+       } else {
+           document.getElementById("9am").style.display = "none";
+       }
+
+        // Show only between these hours
+     if (hour >= 10 && hour < 11) {
+           document.getElementById("10am").style.display = "block";
+       } else {
+           document.getElementById("10am").style.display = "none";
+       }
+       
+          
+
+        // Show only between these hours
+     if (hour >= 12 && hour < 13) {
+           document.getElementById("12am").style.display = "block";
+       } else {
+           document.getElementById("12am").style.display = "none";
+       }
+
+
+        // Show only between these hours
+     if (hour >= 13 && hour < 14) {
+           document.getElementById("1pm").style.display = "block";
+       } else {
+           document.getElementById("1pm").style.display = "none";
+       }
+
+          // Show only between these hours
+     if (hour >= 14 && hour < 15) {
+           document.getElementById("2pm").style.display = "block";
+       } else {
+           document.getElementById("2pm").style.display = "none";
+       }
+
+       // Show only between these hours
+     if (hour >= 15 && hour < 16) {
+           document.getElementById("3pm").style.display = "block";
+       } else {
+           document.getElementById("3pm").style.display = "none";
+       }
+
+
+       // Show only between these hours
+     if (hour >= 16 && hour < 17) {
+           document.getElementById("4pm").style.display = "block";
+       } else {
+           document.getElementById("4pm").style.display = "none";
+       }
+
+
+
+
+      if (hour >= 10 && hour < 12) {
+          document.getElementById("oncomputer").style.display = "block";
+      } else {
+          document.getElementById("oncomputer").style.display = "none";
+      }
+    
+      // Show only between these hours
+      if (hour >= 8 && hour < 24) {
+          document.getElementById("glasses").style.display = "block";
+      } else {
+          document.getElementById("glasses").style.display = "none";
+      }
+    
+         // Show only between these hours
+         if (hour >= 8 && hour < 9) {
+           document.getElementById("closedcomputer").style.display = "block";
+       } else {
+           document.getElementById("closedcomputer").style.display = "none";
+       }
+
+         // Show only between these hours
+         if (hour >= 14 && hour < 24) {
+           document.getElementById("paperreading").style.display = "block";
+       } else {
+           document.getElementById("paperreading").style.display = "none";
+       }
+
+        // Show only between these hours
+        if (hour >= 17 && hour < 20) {
+           document.getElementById("dinner").style.display = "block";
+       } else {
+           document.getElementById("dinner").style.display = "none";
+       }
+
+
+     // Show only between these hours
+     if (hour >= 17 && hour < 18) {
+           document.getElementById("rain").style.display = "block";
+       } else {
+           document.getElementById("rain").style.display = "none";
+       }
+
+
+     // Show only between these hours
+     if (hour >= 8 && hour < 16) {
+           document.getElementById("birdday").style.display = "block";
+       } else {
+           document.getElementById("birdday").style.display = "none";
+       }
+
+         // Show only between these hours
+     if (hour >= 16 && hour < 24) {
+           document.getElementById("birdnight").style.display = "block";
+       } else {
+           document.getElementById("birdnight").style.display = "none";
+       }
+
+          // Show only between these hours
+     if (hour >= 16 && hour < 24) {
+           document.getElementById("drinknight").style.display = "block";
+       } else {
+           document.getElementById("drinknight").style.display = "none";
+       }
+
+        // Show only between these hours
+     if (hour >= 8 && hour < 24) {
+           document.getElementById("breakie").style.display = "block";
+       } else {
+           document.getElementById("breakie").style.display = "none";
+       }
+
+
+          // Show only between these hours
+     if (hour >= 16 && hour < 24) {
+           document.getElementById("spoon").style.display = "block";
+       } else {
+           document.getElementById("spoon").style.display = "none";
+       }
+
+         
+
+
+
+
+  }
+
+  updateImageVisibility();
+  setInterval(updateImageVisibility, 60 * 1000); // check every minute
+</script>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+</body>
+</html>

@@ -10,15 +10,15 @@
 
 <body>
     
-    <p style="
-    color: rgb(10, 10, 10);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
-">
-  Come join on this productive train ride!
-</p>
+
 
 <!-- this is the nightime sky at low opacity  -->
+
+
+<img src="img/join this train ride.png" alt="join" width="500" height="600">
+   
+ 
+
 
     <img id="blue"
     src="img/blue.png"
@@ -89,9 +89,9 @@
 
        // Show only between these hours
        if (hour >= 8 && hour < 24 ) {
-           document.getElementById("whitebackground").style.display = "block";
+           document.getElementById("hi").style.display = "block";
        } else {
-           document.getElementById("whitebackground").style.display = "none";
+           document.getElementById("hi").style.display = "none";
        }
    }
 
@@ -214,13 +214,13 @@ style="
  </script>
 
 <img id="12am"
-src="img/12am.png"
+src="img/12pm!.png"
 style="
    display:none;
    position:absolute;
-   top:120px;       /* adjust vertical position */
+   top:300px;       /* adjust vertical position */
    left:120px;      /* adjust horizontal position */
-   width:400px;    /* scale the image */
+   width:200px;    /* scale the image */
    transform:scale(1.2); /* optional additional scaling */
 " />
 
@@ -466,6 +466,33 @@ style="
 
 
 
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 12 && hour < 13 ) {
+            document.getElementById("writingemails").style.display = "block";
+        } else {
+            document.getElementById("writingemails").style.display = "none";
+        }
+
+        if (hour >= 17 && hour < 18 ) {
+            document.getElementById("writingemails").style.display = "block";
+        } else {
+            document.getElementById("writingemails").style.display = "none";
+        }
+    }
+
+    
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+
 <img id="lunchbreak"
 src="img/lunch break.png"
 style="
@@ -527,8 +554,42 @@ style="
 
 
 
-<img id="readingtime"
-src="img/readingtext.png"
+<img id="reading"
+src="img/2book.png"
+style="
+   display:none;
+   position:absolute;
+   top:110px;       /* adjust vertical position */
+   left:300px;      /* adjust horizontal position */
+   width:700px;    /* scale the image */
+   transform:scale(1.2); /* optional additional scaling */
+" />
+
+<script>
+    function updateImageVisibility() {
+        const now = new Date();
+        const hour = now.getHours();
+ 
+        // Show only between these hours
+        if (hour >= 14 && hour < 16 ) {
+            document.getElementById("reading").style.display = "block";
+        } else {
+            document.getElementById("reading").style.display = "none";
+        }
+    }
+
+    
+    updateImageVisibility();
+    setInterval(updateImageVisibility, 60 * 1000); // check every minute
+ </script>
+
+
+
+
+
+
+<img id="dinner!"
+src="img/dinner.png"
 style="
    display:none;
    position:absolute;
@@ -544,10 +605,10 @@ style="
         const hour = now.getHours();
  
         // Show only between these hours
-        if (hour >= 14 && hour < 16 ) {
-            document.getElementById("readingtime").style.display = "block";
+        if (hour >= 16 && hour < 17 ) {
+            document.getElementById("dinner!").style.display = "block";
         } else {
-            document.getElementById("readingtime").style.display = "none";
+            document.getElementById("dinner!").style.display = "none";
         }
     }
 
@@ -1058,6 +1119,12 @@ style="
 
        // Show only between these hours
        if (hour >= 10 && hour < 12) {
+           document.getElementById("oncomputer").style.display = "block";
+       } else {
+           document.getElementById("oncomputer").style.display = "none";
+       }
+
+       if (hour >= 16 && hour < 19) {
            document.getElementById("oncomputer").style.display = "block";
        } else {
            document.getElementById("oncomputer").style.display = "none";

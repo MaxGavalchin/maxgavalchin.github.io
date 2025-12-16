@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .rectangle {
+            width: 100px;
+            height: 100px;
+            margin: 2px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="pattern"></div>
+
+    <script>
+        const rows = 5;
+        let i = 1; // row counter
+
+        while (i <= rows) {
+            const rowDiv = document.createElement('div'); // container for the row
+            let j = 1; // column counter
+
+            while (j <= i) {
+                const rect = document.createElement('div');
+                rect.classList.add('rectangle');
+
+                // Random color for each rectangle
+                rect.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+                rowDiv.appendChild(rect);
+                j++;
+            }
+
+            document.getElementById('pattern').appendChild(rowDiv);
+            i++;
+        }
+    </script>
+</body>
+</html>

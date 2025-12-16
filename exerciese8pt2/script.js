@@ -1,0 +1,19 @@
+let rows = 5;
+  let result = "";
+
+  for (let i = 1; i <= rows; i++) {
+    for (let j = 1; j <= rows * 2 - 1; j++) {
+
+      // conditional property to form pyramid
+      if (j >= rows - i + 1 && j <= rows + i - 1) {
+        result += "MAX";
+      } else {
+        result += "   ";
+      }
+
+    }
+    result += "\n";
+  }
+
+  document.getElementById("output").textContent = result;
+
